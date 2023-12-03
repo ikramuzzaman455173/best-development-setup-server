@@ -1,5 +1,10 @@
 import { Schema, model } from 'mongoose';
-import { Student, studentName, Gurdian, LocalGurdian, Student } from './student.interfase';
+import {
+  Student,
+  studentName,
+  Gurdian,
+  LocalGurdian,
+} from './student.interfase';
 
 // studentNameSchema
 const studentNameSchema = new Schema<studentName>({
@@ -43,7 +48,6 @@ const studentSchema = new Schema<Student>({
   isActive: ['active', 'blocked'],
 });
 
-
 // create student model
 
-export const StudentModel=model<Student>("student",studentSchema)
+export const StudentModel = model<Student>('student', studentSchema);
