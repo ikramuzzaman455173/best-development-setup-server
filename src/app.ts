@@ -6,8 +6,10 @@ app.use(express.json());
 //cors
 app.use(cors());
 app.get('/', (req: Request, res: Response) => {
-  const a = 5;
-  res.send(a);
+  res.json({
+    success: true,
+    message: 'Welecome to advanced express curd applications.',
+  });
 });
 
 export default app;
